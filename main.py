@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QGridLayout, QLineEdit
+from PyQt6.QtWidgets import *
 from stylesheet import style
 
 def calculate():
