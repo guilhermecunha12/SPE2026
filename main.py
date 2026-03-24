@@ -1,6 +1,13 @@
 from PyQt6.QtWidgets import *
 from stylesheet import style
-from calculate import calculate
+
+def calculate():
+    try:
+        edit.setText(str(eval(edit.text())))
+    except ZeroDivisionError:
+        edit.setText("Error: division by zero")
+    except Exception:
+        edit.setText("Error")
 
 
 app = QApplication([])
